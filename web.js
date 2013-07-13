@@ -1,9 +1,8 @@
-//var fs = require('fs');
-//var infile = "../bitstarter/index.html";
-//var txt = fs.readFileSync(infile);
-//var buf = new Buffer(txt);
-//var txtreplace=buf.toString('utf-8');
-var txtreplace ="Hello World3!";
+var fs = require('fs');
+var infile = "index.html";
+var txt = fs.readFileSync(infile);
+var buf = new Buffer(txt);
+var txtreplace=buf.toString('utf-8');
 
 var express = require('express');
 
