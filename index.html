@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" 
+          rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
           rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -75,6 +79,25 @@
         color: white;
       }
 
+      /* Marketing Copy and Footer*/
+      .copy {
+        padding-top: 2.5%; 
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;      
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;      
+      }
     </style>
   </head>
   <body>
@@ -174,9 +197,92 @@
         </div> 
       </div>
 
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it  -->
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+          <p>;fh;iadpfhkdalfjklsa;jf;kajfk;ajf;dakfhkad;fkjdjdf;askd;fa;df
+             lfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             ld;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             lk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             lfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             ld;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             lfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             l;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+             lkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfaslkjdf;adsjfdk;askfjyyd
+          </p>
+        </div>
+      </div>
 
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>;jfh;iadpfhkdalfjklsa;jf;kajfk;ajf;dakfhkad;fkjdjdf;askd;fa;
+              l;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfdsafdsafdsaf
+               ;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfdsafds
+                afdsalk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfdsafds
+                afdsaflakdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfd
+                safdsafdsafkdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadf
+               dsafsafdsaflkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfad
+             fjadffdsafakdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfdsafd
+              lkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfsafdsaf
+             lkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfsafdsaf
+             lkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadfjadfdsafdsafdsaf
+             lkajfd;akdjfk;asdjfl;sajfaldkfjldsa;kjfasdsdfadsafdsaf
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div>
 
+      <!-- for the FAQ, we introduce a little bit of JS, sing the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group"> 
+              <div class="accordion-heading"> 
+                <a class=accordion-toggle"" data-toggle="collapse"
+                   data-parent="#acordion2" href="#collapseOne"> What does FAQ stand for </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Frequently Asked Question.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group"> 
+              <div class="accordion-heading"> 
+                <a class=accordion-toggle"" data-toggle="collapse"
+                   data-parent="#acordion2" href="#collapseTwo">What's a Frequently Asked Question?</a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class=""accordion-inner>
+                  A question which is commoly asked by users.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+ 
+      </div>
+
+      <!-- Not crucial, but we put this under a CC by-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under the
+             <a href="http://creativecommons.org/licenses/by-sa/3.0">CC By-SA 3.0</a>
+             , without all the cruft that would otherwise be put at the bottom of the page.</p>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
